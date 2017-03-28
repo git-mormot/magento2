@@ -1,0 +1,8 @@
+// Insert Custom Query.
+$this->_resources = \Magento\Framework\App\ObjectManager::getInstance()
+->get('Magento\Framework\App\ResourceConnection');
+$connection= $this->_resources->getConnection();
+
+$themeTable = $this->_resources->getTableName('yourtablename');
+$sql = "INSERT INTO " . $themeTable . "(field1, field2) VALUES ('1', 'NameABC')";
+$connection->query($sql);
