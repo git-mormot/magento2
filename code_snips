@@ -6,3 +6,6 @@ $connection= $this->_resources->getConnection();
 $themeTable = $this->_resources->getTableName('yourtablename');
 $sql = "INSERT INTO " . $themeTable . "(field1, field2) VALUES ('1', 'NameABC')";
 $connection->query($sql);
+
+// How to Insert/Update Multiple Records to Database in Magento 2
+http://www.magestore.com/magento-2-tutorial/how-to-insertupdate-multiple-records-to-database-in-magento-2/
